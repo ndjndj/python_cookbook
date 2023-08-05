@@ -19,7 +19,7 @@ def open_text_split_lines(file_name):
     lines = []
     try:
         with open(file_name, mode="r") as f:
-            tmp_lines = f.splitlines()
+            tmp_lines = f.read().splitlines()
             lines = list(tmp_lines)
         
     except Exception as e:
